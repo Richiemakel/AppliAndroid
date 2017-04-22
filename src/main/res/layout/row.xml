@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativelay"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="9dp" >
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15dip"
+        android:layout_marginStart="15dip"
+        android:maxLines="1"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="67dp"
+        android:layout_marginStart="67dp"
+        android:maxLines="1"
+        android:text="@string/date"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/nom"
+        android:layout_toEndOf="@+id/nom">
+    </TextView>
+    <TextView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/list"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/type"
+        android:layout_toEndOf="@+id/type"
+        android:layout_marginLeft="91dp"
+        android:layout_marginStart="91dp">
+    </TextView>
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/nombre"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/nom"
+        android:layout_alignBottom="@+id/nom"
+        android:layout_toRightOf="@+id/list"
+        android:layout_toEndOf="@+id/list"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp">
+    </TextView>
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:maxLines="1"
+        android:text="@string/type"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/date"
+        android:layout_alignStart="@+id/date"
+        android:layout_above="@+id/date"
+        android:layout_alignRight="@+id/date"
+        android:layout_alignEnd="@+id/date">
+    </TextView>
+
+</RelativeLayout>
